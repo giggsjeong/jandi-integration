@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /srv/integration
+hooks:
+  ApplicationStart:
+    - location: scripts/ApplicationStart.sh
+      timeout: 60
+
